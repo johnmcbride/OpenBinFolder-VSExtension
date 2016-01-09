@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="f1c3652d-4d91-4be7-a90c-882ad1a62224" Version="1.0" Language="en-US" Publisher="John McBride" />
+    <DisplayName>Open Bin Folder Extension</DisplayName>
+    <Description xml:space="preserve">Visual Studio Extension that adds an "Open Bin Folder" to the right click menu of the project for quick access to the buid output folder.</Description>
+    <Icon>OpenBinIcon.png</Icon>
+    <PreviewImage>OpenBinFolder_ScreenShot.png</PreviewImage>
+    <Tags>Bin,Debug,Folder</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
