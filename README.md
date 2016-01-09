@@ -10,9 +10,14 @@ Download the extension at the
 or from within Visual Studio using the Extension Manager.
 
 ---
+## Project Explorer
+You can right click on any project in a solution and get the menu that enables you to open
+the bin folder based on the active configuration selected for the project.
+
+<img src="https://github.com/johnmcbride/OpenBinFolder-VSExtension/blob/master/OpenBinFolder/images/openbin_rightclickmenu.png" width="308">
+
+---
 ## Additional Information
 We are working on getting automated build working using appveyor. If you have experience
 or want to help with this, feel free to reach out to me on [twitter](http://twitter.com/johnmcbride)
 or make a pul request and submit it.
-
-<img src="https://github.com/johnmcbride/OpenBinFolder-VSExtension/blob/master/OpenBinFolder/images/openbin_rightclickmenu.png" width="308">
