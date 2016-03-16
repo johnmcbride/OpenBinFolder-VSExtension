@@ -73,27 +73,25 @@ namespace OpenBinFolder
             {
                 //get the directory path based on the project file.
                 string _projectPath = Path.GetDirectoryName(_activeProject.FullName);
-                //combine the bin directory to the project directory
-                string _projectBinPath = Path.Combine(_projectPath, "bin");
-                //get the active configuration name
-                string _configName = _activeProject.ConfigurationManager.ActiveConfiguration.ConfigurationName;
-
-                //combine the active config to the directory bin location
-                string _projectBinBuildPath = Path.Combine(_projectBinPath, _configName);
+                //get the output path based on the active configuration
+                string _projectOutputPath = _activeProject.ConfigurationManager.ActiveConfiguration.Properties.Item("OutputPath").Value.ToString();
+                //combine the project path and output path to get the bin path
+                string _projectBinPath = Path.Combine(_projectPath, _projectOutputPath);
 
                 //if the directory exists (already built) then open that directory
                 //in windows explorer using the diagnostics.process object
-                if (Directory.Exists(_projectBinBuildPath))
+                if (Directory.Exists(_projectBinPath))
                 {
-                    System.Diagnostics.Process.Start(_projectBinBuildPath);
+                    System.Diagnostics.Process.Start(_projectBinPath);
                 }
                 else
                 {
-                    //if the directory doesnt exist, the open the bin directory (one level up).
-                    System.Diagnostics.Process.Start(_projectBinPath);
+                    //if the directory doesnt exist, open the project directory.
+                    System.Diagnostics.Process.Start(_projectPath);
                 }
             }
         }
+
         #endregion
     }
 }
