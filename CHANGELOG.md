@@ -1,8 +1,7 @@
 # Roadmap
 
-- [x] A feature that has been completed
-- [ ] A feature that has NOT yet been completed
-
+- [ ] A feature enables opening a bin folder of an installtion project?
+- 
 Features that have a checkmark are complete and available for
 download in the
 [CI build](http://vsixgallery.com/extension/f1c3652d-4d91-4be7-a90c-882ad1a62224/).
@@ -16,14 +15,10 @@ on the official Visual Studio extension gallery.
 
 **2016-02-13**
 
-- [x] Feature 3
-- [x] Feature 4
+- [x] Get bin folder location from the project properties.
 
 ## 1.0
 
 **2016-01-21**
 
 - [x] Initial release
-- [x] Feature 1
-- [x] Feature 2
-  - [x] Sub feature
