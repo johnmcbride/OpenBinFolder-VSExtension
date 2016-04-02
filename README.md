@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/93kw7j8kt2thh7di?svg=true)](https://ci.appveyor.com/project/johnmcbride/openbinfolder-vsextension)
+
 # Open bin Folder (Explorer)
 A Visual Studio 2015 extension that provides a right click menu 
 option to open up the bin folder in windows explorer for the selected 
