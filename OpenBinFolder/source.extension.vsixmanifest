@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="f1c3652d-4d91-4be7-a90c-882ad1a62224" Version="1.0" Language="en-US" Publisher="John McBride" />
+    <Identity Id="f1c3652d-4d91-4be7-a90c-882ad1a62224" Version="1.1" Language="en-US" Publisher="John McBride" />
     <DisplayName>Open Bin Folder Extension</DisplayName>
     <Description xml:space="preserve">Visual Studio Extension that adds an "Open Bin Folder" to the right click menu of the project for quick access to the buid output folder.</Description>
     <Icon>OpenBinIcon.png</Icon>
