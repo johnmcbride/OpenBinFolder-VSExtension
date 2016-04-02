@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBinFolder", "OpenBinFol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9895F76D-C8EC-4026-A388-82D2117CAA21}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		CHANGELOG.md = CHANGELOG.md
 	EndProjectSection
 EndProject
